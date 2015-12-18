@@ -1,4 +1,10 @@
-# TODO Change relValue
+################################################################################
+#	SPRITE_COMPOSITION CLASS
+#	
+#	Version 1.0 (Build 2)
+#	18/12/2015
+#	Scripter: Fuji
+################################################################################
 
 class IgnoreArg
 	attr_accessor	:value
@@ -169,8 +175,8 @@ class Sprite_Composition
 		else
 			@sprites.each {|sprite| sprite.zoom_y += relValue}
 		end
+		@zoom_y = value
 	end
-	@zoom_y = value
 	
 	def angle=(value)
 		relValue = value - @angle
