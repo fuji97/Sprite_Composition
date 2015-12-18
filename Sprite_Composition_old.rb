@@ -113,71 +113,71 @@ class Sprite_Composition
 	end
 	
 	def y=(value)
-		relValue = value - @y
+		@y = value - @y
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.y += relValue}
+			@sprites.each_value {|sprite| sprite.y += @y}
 		else
-			@sprites.each {|sprite| sprite.y += relValue}
+			@sprites.each {|sprite| sprite.y += @y}
 		end
 		@y = value
 	end
 	
 	def z=(value)
-		relValue = value - @z
+		@z = value - @z
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.z += relValue}
+			@sprites.each_value {|sprite| sprite.z += @z}
 		else
-			@sprites.each {|sprite| sprite.z += relValue}
+			@sprites.each {|sprite| sprite.z += @z}
 		end
 		@z = value
 	end
 	
 	def ox=(value)
-		relValue = value - @ox
+		@ox = value - @ox
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.ox += relValue}
+			@sprites.each_value {|sprite| sprite.ox += @ox}
 		else
-			@sprites.each {|sprite| sprite.ox += relValue}
+			@sprites.each {|sprite| sprite.ox += @ox}
 		end
 		@ox = value
 	end
 	
 	def oy=(value)
-		relValue = value - @oy
+		@oy = value - @oy
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.oy += relValue}
+			@sprites.each_value {|sprite| sprite.oy += @oy}
 		else
-			@sprites.each {|sprite| sprite.oy += relValue}
+			@sprites.each {|sprite| sprite.oy += @oy}
 		end
 		@oy = value
 	end
 	
 	def zoom_x=(value)
-		relValuerelValue = value - @zoom_x
+		@zoom_x = value - @zoom_x
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.zoom_x += relValuerelValue}
+			@sprites.each_value {|sprite| sprite.zoom_x += @zoom_x}
 		else
-			@sprites.each {|sprite| sprite.zoom_x += relValuerelValue}
+			@sprites.each {|sprite| sprite.zoom_x += @xzoom_x}
 		end
 		@zoom_x = value
 	end
 	
 	def zoom_y=(value)
-		relValue = value - @zoom_y
+		@zoom_y = value - @zoom_y
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.zoom_y += relValue}
+			@sprites.each_value {|sprite| sprite.zoom_y += @zoom_y}
 		else
-			@sprites.each {|sprite| sprite.zoom_y += relValue}
+			@sprites.each {|sprite| sprite.zoom_y += @zoom_y}
 		end
 	end
 	@zoom_y = value
 	
 	def angle=(value)
-		relValue = value - @angle
+		@angle = value - @angle
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.angle += relValue}
+			@sprites.each_value {|sprite| sprite.angle += @angle}
 		else
-			@sprites.each {|sprite| sprite.angle += relValue}
+			@sprites.each {|sprite| sprite.angle += @angle}
 		end
 		@angle = value
 	end
@@ -192,21 +192,21 @@ class Sprite_Composition
 	end
 	
 	def bush_depth=(value)
-		relValue = value - @bush_depth
+		@bush_depth = value - @bush_depth
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.bush_depth += relValue}
+			@sprites.each_value {|sprite| sprite.bush_depth += @bush_depth}
 		else
-			@sprites.each {|sprite| sprite.bush_depth += relValue}
+			@sprites.each {|sprite| sprite.bush_depth += @bush_depth}
 		end
 		@bush_depth = value
 	end
 	
 	def opacity=(value)
-		relValue = value - @opacity
+		@opacity = value - @opacity
 		if (@sprites.is_a?(Hash))
-			@sprites.each_value {|sprite| sprite.opacity += relValue}
+			@sprites.each_value {|sprite| sprite.opacity += @opacity}
 		else
-			@sprites.each {|sprite| sprite.opacity += relValue}
+			@sprites.each {|sprite| sprite.opacity += @opacity}
 		end
 		@opacity = value
 	end
